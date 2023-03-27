@@ -25,3 +25,4 @@
 ### 9. ByteCode -> Python #4
 - `102-magic_calculation.py` - the Python function `def magic_calculation(a, b):`.
 ### 10. CPython #2: PyFloatObject
+- `103-python.c` - three C functions that print some basic info about Python lists, Python bytes an Python float objects.
