@@ -15,14 +15,11 @@ class Rectangle:
             width (int): The width of the new rectangle.
             height (int): The height of the new rectangle.
             """
+
+        type(self).number_of_instances += 1
         self.width = width
-        self.height = height
-        Rectangle.number_of_instances += 1
-
-    def __del__(self):
-        print("Bye rectangle...")
-        Rectangle.number_of_instances -= 1
-
+        self.height = height      
+        
     @property
     def width(self):
         """sets the width of the rectangle"""
@@ -59,8 +56,8 @@ class Rectangle:
             return 0
         return 2 * (self.width + self.height)
 
-        def __str__(self):
-            """Return the printable representation of the Rectangle."""
+    def __str__(self):
+        """Return the printable representation of the Rectangle."""
         if self.__width == 0 or self.__height == 0:
             return ("")
 
