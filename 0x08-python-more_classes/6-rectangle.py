@@ -1,12 +1,19 @@
 #!/usr/bin/python3
 
+"""defines a rectangle class"""
+
+
 class Rectangle:
     """Represents a rectangle"""
 
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
-        """Initializes/creates a new Rectangle"""
+        """Initializes/creates a new Rectangle
+         Args:
+            width (int): The width of the new rectangle.
+            height (int): The height of the new rectangle.
+            """
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
