@@ -5,7 +5,7 @@
 class student:
     """represents a student"""
 
-       def __init__(self, first_name, last_name, age):
+    def __init__(self, first_name, last_name, age):
         """Initialize a new Student.
         Args:
             first_name (str): The first name of the student.
