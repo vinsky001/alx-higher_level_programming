@@ -1,4 +1,4 @@
-#!/usr/bin/noje
+#!/usr/bin/node
 
 const fs = require('fs');
 const path = require('path');
