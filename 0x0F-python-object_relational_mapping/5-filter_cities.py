@@ -10,7 +10,7 @@ import MySQLdb
 
 if __name__ == "__main__":
     # Connect to MySQL server  provided credentials
-    connection = MySQLdb.connect(user=[argv1], passwd=[argv2], db[argv3])
+    connection = MySQLdb.connect(user=argv[1], passwd=argv[2], db=argv[3])
 
     # Create a cursor object
     cur = connection.cursor()
