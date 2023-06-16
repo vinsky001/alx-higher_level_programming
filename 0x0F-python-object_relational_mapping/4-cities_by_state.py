@@ -6,7 +6,7 @@ Listsall cities from the database hbtn_0e_4_usa
 from sys import argv
 import MySQLdb
 
-if __name__ = __"main"__:
+if __name__ == __"main"__:
     # Connect to MySQL dbwith provided credentials#
     connection = MySQLdb.connect(user=[argv1], passwd=[argv2], db=[argv3])
 
