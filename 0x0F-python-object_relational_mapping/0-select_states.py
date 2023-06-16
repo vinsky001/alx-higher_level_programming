@@ -12,7 +12,8 @@ if __name__ == "__main__":
 
     #Create connection object and cursor#
     connection = MySQLdb.connect(host="localhost", user="username", password="password", db="database")
-    cursor = cursor.connect()
+    # Create a cursor object
+    cursor = connection.cursor()
 
     # Execute query and fetch results
     cursor.execute("SELECT * FROM states")
