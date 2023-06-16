@@ -19,6 +19,10 @@ if __name__ == "__main__":
     # Fetch the results
     results = cursor.fetchall()
 
+    #print results
+    for states in results:
+        print(states)
+
     # Close the cursor and the database connection
     cursor.close()
     connection.close()
