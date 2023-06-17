@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-Script that  lists all State objects from the database hbtn_0e_6_usa
+This script lists all State objects from the database hbtn_0e_6_usa
 """
 
 from sys import argv
 from sqlalchemy import create_engine
 from model_state import State
-from sqlalchemy.orm import sessionmake
+from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
     # Create database engine
@@ -15,8 +15,8 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
 
     # Create session object
-    session = sessionmaker(bind=engine)
-    session = Session_maker()
+    session_maker = sessionmaker(bind=engine)
+    session = session_maker()
 
     # Query all State objects and print their ids and names
     for state in session.query(State).order_by(State.id):
