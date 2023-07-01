@@ -12,8 +12,8 @@ if __name__ == "__main__":
     from urllib.request import urlopen, Request
 
     url = "https://alx-intranet.hbtn.io/status"
-    request = request(url)
-    with urlopen(url) as res:
+    req = request(url)
+    with urllib.request.urlopen(req) as res:
         content = res.read()
 
     print("Body response:")
