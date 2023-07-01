@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     url = "https://alx-intranet.hbtn.io/status"
     request = request(url)
-    with urllib.request.urlopen(url) as res:
+    with urlopen(url) as res:
         content = res.read()
 
     print("Body response:")
