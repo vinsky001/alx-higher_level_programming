@@ -5,7 +5,7 @@ Python script that:
 - and displays the body of the response (decoded in utf-8)
 """
 
-from sys import argv
+import sys
 import urllib.parse
 import urllib.request
 
