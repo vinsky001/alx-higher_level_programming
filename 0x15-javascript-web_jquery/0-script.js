@@ -1,10 +1,8 @@
 #!/usr/bin/node
 /**
-  * updates text color of the <header> element to red
-  * not allowed to use document.querySelector
-  * you must use JQuery API
+  * updates the color of the <header> element to red
   */
-const $ = window.$;
-$(document).ready(function () {
-  $('header').css('color', 'red');
-});
+window.onload = function myFunction () {
+  const elem = document.querySelector('header');
+  elem.style.color = 'red';
+};
